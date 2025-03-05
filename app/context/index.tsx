@@ -5,7 +5,6 @@ import { createAppKit } from '@reown/appkit/react'
 import { wagmiAdapter, projectId, siweConfig, metadata, chains } from '../config';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { State, WagmiProvider } from 'wagmi';
-import { vTestnet } from '@/app/tenderly.config'
 
 // Setup queryClient
 const queryClient = new QueryClient();
@@ -15,7 +14,7 @@ if (!projectId) throw new Error('Project ID is not defined');
 // Create modal
 createAppKit({ 
   adapters: [wagmiAdapter], 
-  networks: [mainnet, arbitrum, vTestnet], 
+  networks: chains, 
   projectId, 
   siweConfig, 
   metadata,
