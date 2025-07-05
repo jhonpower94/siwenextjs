@@ -1,11 +1,14 @@
 "use client";
+import CssBaseline from "@mui/joy/CssBaseline";
+import { CssVarsProvider, extendTheme } from "@mui/joy/styles";
 import {
   getAddressFromMessage,
   getChainIdFromMessage,
   verifySignature,
 } from "@reown/appkit-siwe";
-import styles from "./page.module.css";
 import { projectId } from "./config/index";
+
+const customTheme = extendTheme({ defaultColorScheme: "dark" });
 
 export default function Home() {
   const message = atob(
@@ -30,9 +33,20 @@ export default function Home() {
   };
 
   return (
-    <main className={styles.main}>
+    <CssVarsProvider
+      defaultMode="dark"
+      theme={customTheme}
+      disableTransitionOnChange
+    >
+      <CssBaseline />
+
+    </CssVarsProvider>
+  );
+}
+
+/*
+<main className={styles.main}>
       <appkit-button />
       <button onClick={handleVerMsg}>Verify</button>
     </main>
-  );
-}
+    */

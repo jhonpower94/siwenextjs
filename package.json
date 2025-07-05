@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource/inter": "^5.2.6",
+    "@mui/joy": "^5.0.0-beta.52",
     "@reown/appkit": "1.6.8",
     "@reown/appkit-adapter-wagmi": "1.6.8",
     "@reown/appkit-siwe": "1.6.8",
     "@tailwindcss/postcss": "^4.0.0-alpha.13",
     "@tanstack/react-query": "^5.53.1",
     "ethers": "^6.13.5",
+    "firebase": "^11.10.0",
     "next": "14.2.7",
     "next-auth": "^4.24.7",
     "postcss": "^8.5.3",
