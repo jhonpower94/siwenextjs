@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -25,6 +25,8 @@
     "postcss": "^8.5.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-redux": "^9.2.0",
+    "redux": "^5.0.1",
     "viem": "^2.21.0",
     "wagmi": "^2.12.7"
   },
