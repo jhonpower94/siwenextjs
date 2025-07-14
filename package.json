@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "install-deps": "npm install --legacy-peer-deps",
+    "build": "npm run install-deps && next build",
     "start": "next start",
     "lint": "next lint"
   },
