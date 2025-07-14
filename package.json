@@ -31,11 +31,11 @@
     "wagmi": "^2.12.7"
   },
   "devDependencies": {
+    "typescript": "^5",
     "@types/node": "^22.5.1",
-    "@types/react": "^18.3.5",
-    "@types/react-dom": "^18",
-    "eslint": "^9.31.0",
-    "eslint-config-next": "^14.2.7",
-    "typescript": "^5"
+    "@types/react": "19.0.12",
+    "@types/react-dom": "19.0.4",
+    "eslint": "^9.9.1",
+    "eslint-config-next": "14.2.7"
   }
 }
