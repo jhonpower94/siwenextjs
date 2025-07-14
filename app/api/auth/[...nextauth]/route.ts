@@ -111,3 +111,8 @@ const handler = NextAuth({
 });
 
 export { handler as GET, handler as POST };
+
+export function generateStaticParams() {
+  const pages = ['/'];
+  return pages.map((page) => ({ name: page }));
+}

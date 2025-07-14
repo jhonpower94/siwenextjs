@@ -6,7 +6,7 @@ const nextConfig = {
     config.externals.push("pino-pretty", "lokijs", "encoding");
     return config;
   },
-  output: "standalone",
+  output: "export",
 };
 
 export default nextConfig;
